@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Assets/Styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="pb-3 pt-2">
+        <h2 class="position-relative start-50">Weather Dashboard</h2>
+    </header>
+    <main class="overflow-hidden">
+        <div id="search-width" class="container-fluid float-start d-inline me-2">
+            <div class="border-bottom pb-3">
+                <h3 class="fw-bold mt-1">Search for a City:</h3>
+                <form>
+                    <input type="search" placeholder="San Diego" class="ps-2 py-1" id="search"><br>
+                    <input type="submit" value="Search" class="mt-3" id="submit">
+                </form>
+            </div>
+            <div id="savedCities">
+                <input type="submit" value="Search" class="mt-3">
+            </div>
+        </div>
+        <div class="d-inline-block w-75">
+            <div id="selectedCity" class="ps-2 mt-3">
+                <h3 class="ps-1"><span id="city">City</span> <img id="icon"></h3>
+                <p>Temp: <span id="temp"></span></p>
+                <p>Wind: <span id="wind"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+            </div>
+            <h4 id="forecastHeader">5-Day Forecast:</h4>
+            <div id="forecast">        
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./Assets/Scripts/script.js"></script>
+</body>
+
+</html>

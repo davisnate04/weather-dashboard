@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html, body {
+    overflow-x:hidden;
+}
+
+header {
+    background: linear-gradient(to right, #256b94, #162eb1);
+}
+
+header h2 {
+    color:white;
+    font-weight:650;
+}
+
+h3 {
+    margin-left: -5px;
+}
+
+input {
+    padding: 2px 0 2px 0;
+    margin: 3px 0 0 -5px;
+    width: 100%;
+}
+
+.cityBtn {
+    background-color:#aeaeae;
+    color:black;
+}
+
+#search-width {
+    width:23%;
+}
+
+#submit {
+    background-color:#6991e3;
+    color:white;
+    border-radius: 3px;
+}
+
+#selectedCity {
+    width: 85.5%;
+    border: black solid 1px;
+    border-radius: 2px;
+}
+
+#selectedCity img {
+    height:auto;
+    width:5%;
+}
+
+#selectedCity h3 {
+    font-weight:bold;
+}
+
+#selectedCity p {
+    font-weight: 500;
+}
+
+#forecastHeader {
+    font-weight:bold;
+    padding-top:15px;
+}
+
+#forecast {
+    display:flex;
+    height:20%;
+}
+
+#forecast > div {
+    background-color:#323d4f;
+    height:auto;
+    margin-right:30px;
+    width:15%;
+}
+
+#forecast img {
+    height:auto;
+    width:30%;
+}
+
+#forecast h5 {
+    font-weight:bold;
+}
+
+#forecast p {
+    font-weight:500;
+}
+
+#forecast > * {
+    color:white;
+}
