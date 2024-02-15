@@ -44,7 +44,7 @@ function input(event) {
 
 // Gets the coordinates of the city
 function getCoords(item) {
-    const city = `http://api.openweathermap.org/geo/1.0/direct?q=${item}&limit=1&appid=${APIkey}`
+    const city = `https://api.openweathermap.org/geo/1.0/direct?q=${item}&limit=1&appid=${APIkey}`
     
     fetch(city)
         .then(response => {
